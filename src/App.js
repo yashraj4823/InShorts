@@ -17,7 +17,8 @@ function App() {
     try{
 
       const news = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API}&category=${category}&pageSize=${loadMore}`
+        // `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API}&category=${category}&pageSize=${loadMore}`
+         `https://saurav.tech/NewsAPI/top-headlines/category/${category}/in.json`
       );
       setNewsArray(news.data.articles);
      
